@@ -1,0 +1,70 @@
+{
+  "events": [
+    {
+      "year": "2025",
+      "month": "August",
+      "title": "Best Reviewer Award",
+      "description": "IEEE 26th International Conference on Information Reuse and Integration for Data Science",
+      "type": "award"
+    },
+    {
+      "year": "2024",
+      "month": "August",
+      "title": "Outstanding Service Award",
+      "description": "IEEE 25th International Conference on Information Reuse and Integration for Data Science",
+      "type": "award"
+    },
+    {
+      "year": "2023",
+      "month": "August",
+      "title": "Joined University of Montana",
+      "description": "Started as Assistant Professor (tenure track) in the Department of Computer Science",
+      "type": "position"
+    },
+    {
+      "year": "2023",
+      "title": "Ph.D. in Computer Science and Engineering",
+      "description": "University of Cincinnati, Cincinnati, Ohio",
+      "type": "education"
+    },
+    {
+      "year": "2022-2023",
+      "title": "Graduate Student Engineer of the Month Award",
+      "description": "Outstanding CEAS graduate student at University of Cincinnati",
+      "type": "award"
+    },
+    {
+      "year": "2021-2022",
+      "title": "Robert J. Herbold Fellowships",
+      "description": "College of Engineering and Applied Science, University of Cincinnati ($10,000)",
+      "type": "fellowship"
+    },
+    {
+      "year": "2021",
+      "month": "October",
+      "title": "Best Emerging Results and Vision Paper Award",
+      "description": "15th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM 2021)",
+      "type": "award"
+    },
+    {
+      "year": "2021",
+      "month": "September",
+      "title": "Best Research Paper Award",
+      "description": "29th IEEE International Requirements Engineering Conference (RE 2021)",
+      "type": "award"
+    },
+    {
+      "year": "2020",
+      "month": "August",
+      "title": "Student Volunteer Outstanding Service Award",
+      "description": "21st IEEE International Conference on Information Reuse and Integration for Data Science (IEEE IRI 2020)",
+      "type": "award"
+    },
+    {
+      "year": "2019",
+      "title": "Master of Computer Science",
+      "description": "Ball State University, Muncie, Indiana",
+      "type": "education"
+    }
+  ]
+}

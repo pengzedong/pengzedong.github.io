@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+import TimelineItem from '../components/TimelineItem.astro';
+import timelineData from '../data/timeline.json';
+---
+
+<Layout title="Research - Dr. Zedong Peng">
+  <section class="container mx-auto px-6 py-16">
+    <h1 class="section-title">Research</h1>
+    
+    <!-- Research Overview -->
+    <div class="prose-custom max-w-4xl mb-12">
+      <p class="text-lg leading-relaxed mb-6">
+        My research focuses on advancing software engineering practices through innovative approaches to requirements engineering, automated testing, and software quality assurance. I develop AI-driven techniques to bridge the gap between software requirements and implementation, with particular emphasis on traceability, metamorphic testing, and vulnerability detection.
+      </p>
+      
+      <p class="text-lg leading-relaxed mb-6">
+        A central theme in my work is leveraging natural language processing and machine learning to automate and improve traditionally manual software engineering tasks. This includes developing novel methods for requirements abstraction identification, test case generation from natural language specifications, and automated detection of software vulnerabilities in open-source systems.
+      </p>
+    </div>
+
+    <!-- Research Areas -->
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">Key Research Areas</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+      <div class="card p-6">
+        <h3 class="text-xl font-bold text-montana-600 dark:text-montana-400 mb-3">Requirements Engineering & Traceability</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Developing automated approaches for requirements abstraction identification, environment-driven testing, and maintaining traceability links between requirements and implementation artifacts. This work has received recognition including the Best Research Paper Award at RE 2021.
+        </p>
+      </div>
+
+      <div class="card p-6">
+        <h3 class="text-xl font-bold text-montana-600 dark:text-montana-400 mb-3">Metamorphic Testing</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Exploring metamorphic testing techniques for scientific software systems where traditional test oracles are challenging to establish. My work focuses on discovering and applying metamorphic relations to improve test adequacy in computational science applications.
+        </p>
+      </div>
+
+      <div class="card p-6">
+        <h3 class="text-xl font-bold text-montana-600 dark:text-montana-400 mb-3">Automated Vulnerability Detection</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Advancing techniques for automated vulnerability scanning in open-source software with emphasis on minimizing false positives and improving detection accuracy through machine learning approaches.
+        </p>
+      </div>
+
+      <div class="card p-6">
+        <h3 class="text-xl font-bold text-montana-600 dark:text-montana-400 mb-3">AI for Software Engineering</h3>
+        <p class="text-gray-700 dark:text-gray-300">
+          Investigating the application of large language models (LLMs) and retrieval-augmented generation (RAG) to software engineering tasks, including requirements testability prediction, code generation, and automated documentation analysis.
+        </p>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">Academic Timeline</h2>
+    <div class="max-w-3xl">
+      {timelineData.events.map(event => (
+        <TimelineItem event={event} />
+      ))}
+    </div>
+  </section>
+</Layout>

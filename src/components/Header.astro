@@ -1,0 +1,75 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Research', path: '/research' },
+  { name: 'Publications', path: '/publications' },
+  { name: 'Teaching', path: '/teaching' },
+  { name: 'Contact', path: '/contact' }
+];
+---
+
+<header class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+  <nav class="container mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <a href="/" class="text-xl font-bold text-montana-600 dark:text-montana-400 hover:text-montana-700 dark:hover:text-montana-300 transition-colors">
+        Zedong Peng
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        {navItems.map(item => (
+          <a 
+            href={item.path}
+            class={`font-medium transition-colors ${
+              currentPath === item.path 
+                ? 'text-montana-600 dark:text-montana-400' 
+                : 'text-gray-700 dark:text-gray-300 hover:text-montana-600 dark:hover:text-montana-400'
+            }`}
+          >
+            {item.name}
+          </a>
+        ))}
+        <ThemeToggle />
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center space-x-4">
+        <ThemeToggle />
+        <button id="mobile-menu-btn" class="text-gray-700 dark:text-gray-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-3">
+      {navItems.map(item => (
+        <a 
+          href={item.path}
+          class={`block font-medium transition-colors ${
+            currentPath === item.path 
+              ? 'text-montana-600 dark:text-montana-400' 
+              : 'text-gray-700 dark:text-gray-300'
+          }`}
+        >
+          {item.name}
+        </a>
+      ))}
+    </div>
+  </nav>
+</header>
+
+<script>
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>

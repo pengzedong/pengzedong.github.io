@@ -1,0 +1,47 @@
+---
+interface Props {
+  event: {
+    year: string;
+    month?: string;
+    title: string;
+    description: string;
+    type: 'award' | 'position' | 'education' | 'fellowship';
+  };
+}
+
+const { event } = Astro.props;
+
+const typeColors = {
+  award: 'border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20',
+  position: 'border-montana-500 bg-montana-50 dark:bg-montana-900/20',
+  education: 'border-forest-500 bg-forest-50 dark:bg-forest-900/20',
+  fellowship: 'border-purple-500 bg-purple-50 dark:bg-purple-900/20'
+};
+
+const typeIcons = {
+  award: '🏆',
+  position: '💼',
+  education: '🎓',
+  fellowship: '💰'
+};
+---
+
+<div class={`pl-8 pb-8 border-l-4 ${typeColors[event.type]} relative`}>
+  <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-white dark:bg-gray-800 border-4 border-current flex items-center justify-center text-xs">
+    {typeIcons[event.type]}
+  </div>
+  
+  <div class="mb-2">
+    <span class="inline-block px-3 py-1 bg-gray-200 dark:bg-gray-700 rounded-full text-sm font-semibold text-gray-900 dark:text-gray-100">
+      {event.month ? `${event.month} ${event.year}` : event.year}
+    </span>
+  </div>
+  
+  <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+    {event.title}
+  </h3>
+  
+  <p class="text-gray-700 dark:text-gray-300">
+    {event.description}
+  </p>
+</div>

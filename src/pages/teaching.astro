@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import CourseCard from '../components/CourseCard.astro';
+import teachingData from '../data/teaching.json';
+---
+
+<Layout title="Teaching - Dr. Zedong Peng">
+  <section class="container mx-auto px-6 py-16">
+    <h1 class="section-title">Teaching</h1>
+    
+    <div class="prose-custom max-w-4xl mb-12">
+      <p class="text-lg leading-relaxed mb-6">
+        At the University of Montana, I teach a range of courses covering fundamental and advanced topics in computer science and software engineering. My teaching philosophy emphasizes hands-on learning, industry-relevant skills, and cultivating critical thinking in software development.
+      </p>
+      
+      <p class="text-lg leading-relaxed">
+        I integrate current research trends and real-world software engineering practices into my courses, preparing students for careers in technology while also encouraging those interested in research to explore deeper questions in software quality, testing, and requirements engineering.
+      </p>
+    </div>
+
+    <!-- Courses -->
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">Courses</h2>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+      {teachingData.courses.map(course => (
+        <CourseCard course={course} />
+      ))}
+    </div>
+
+    <!-- Teaching Philosophy -->
+    <div class="card p-8 bg-gradient-to-br from-montana-50 to-forest-50 dark:from-gray-800 dark:to-gray-700">
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">Teaching Philosophy</h2>
+      <div class="prose-custom space-y-4">
+        <p>
+          <strong>Industry-Relevant Skills:</strong> I emphasize practical skills that students will use in their careers, including version control with Git, continuous integration/continuous deployment (CI/CD), automated testing, and agile development methodologies.
+        </p>
+        <p>
+          <strong>Active Learning:</strong> Through project-based assignments and collaborative work, students engage directly with software engineering challenges, learning not just what to do but why and how to adapt techniques to different contexts.
+        </p>
+        <p>
+          <strong>Research Integration:</strong> I bring insights from current research into the classroom, exposing students to cutting-edge developments in AI-assisted software engineering, automated testing, and quality assurance.
+        </p>
+        <p>
+          <strong>Inclusive Excellence:</strong> I strive to create an inclusive learning environment where all students feel supported in their journey, providing resources and mentorship to help them succeed regardless of their background.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

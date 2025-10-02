@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeroSection from '../components/HeroSection.astro';
+import QuickLinks from '../components/QuickLinks.astro';
+import profileData from '../data/profile.json';
+---
+
+<Layout title="Dr. Zedong Peng - Home">
+  <HeroSection />
+  
+  <QuickLinks />
+  
+  <!-- Research Interests Section -->
+  <section class="bg-gray-50 dark:bg-gray-800 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">Research Interests</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        {profileData.researchInterests.map(interest => (
+          <div class="bg-white dark:bg-gray-700 rounded-lg p-4 text-center shadow-md hover:shadow-lg transition-shadow">
+            <p class="text-gray-900 dark:text-gray-100 font-medium">{interest}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Highlights -->
+  <section class="container mx-auto px-6 py-16">
+    <h2 class="section-title text-center">Recent Highlights</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="card p-6 text-center">
+        <div class="text-4xl mb-4">🏆</div>
+        <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Best Reviewer Award</h3>
+        <p class="text-gray-700 dark:text-gray-300">IEEE IRI 2025</p>
+      </div>
+      
+      <div class="card p-6 text-center">
+        <div class="text-4xl mb-4">🎓</div>
+        <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">Assistant Professor</h3>
+        <p class="text-gray-700 dark:text-gray-300">University of Montana since 2023</p>
+      </div>
+      
+      <div class="card p-6 text-center">
+        <div class="text-4xl mb-4">📚</div>
+        <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-2">18+ Publications</h3>
+        <p class="text-gray-700 dark:text-gray-300">Top conferences & journals</p>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,48 @@
+---
+interface Props {
+  course: {
+    code: string;
+    title: string;
+    semesters: string[];
+    description: string;
+    level: string;
+  };
+}
+
+const { course } = Astro.props;
+---
+
+<div class="card p-6">
+  <div class="flex items-start justify-between mb-3">
+    <div>
+      <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100">
+        {course.code}
+      </h3>
+      <p class="text-lg text-montana-600 dark:text-montana-400 font-semibold">
+        {course.title}
+      </p>
+    </div>
+    <span class={`px-3 py-1 rounded-full text-sm font-semibold ${
+      course.level === 'graduate' 
+        ? 'bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200'
+        : 'bg-montana-100 dark:bg-montana-900 text-montana-800 dark:text-montana-200'
+    }`}>
+      {course.level}
+    </span>
+  </div>
+  
+  <p class="text-gray-700 dark:text-gray-300 mb-4">
+    {course.description}
+  </p>
+  
+  <div class="border-t border-gray-200 dark:border-gray-700 pt-3">
+    <p class="text-sm text-gray-600 dark:text-gray-400 font-semibold mb-2">Semesters Taught:</p>
+    <div class="flex flex-wrap gap-2">
+      {course.semesters.map(semester => (
+        <span class="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded text-sm">
+          {semester}
+        </span>
+      ))}
+    </div>
+  </div>
+</div>

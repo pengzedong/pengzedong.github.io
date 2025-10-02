@@ -1,0 +1,205 @@
+{
+  "conferences": [
+    {
+      "id": 1,
+      "title": "The AI Imitation Game: A Cognitive Comparison of Mimicry in Large Language Models",
+      "authors": "Victor Wen, Zedong Peng, Yusi Chen",
+      "venue": "2025 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+      "year": 2025,
+      "status": "accepted",
+      "tags": ["AI", "LLM", "cognition"],
+      "url": ""
+    },
+    {
+      "id": 2,
+      "title": "Advanced Vulnerability Scanning for Open Source Software to Minimize False Positives",
+      "authors": "Victor Wen, Zedong Peng",
+      "venue": "2024 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+      "year": 2024,
+      "pages": "156-157",
+      "tags": ["vulnerability", "security", "open-source"],
+      "doi": "10.1109/IRI62200.2024.00041",
+      "url": "http://doi.org/10.1109/IRI62200.2024.00041"
+    },
+    {
+      "id": 3,
+      "title": "Leveraging ChatGPT to Predict Requirements Testability with Differential In-Context Learning",
+      "authors": "Mahima Dahiya, Rashminder Gill, Nan Niu, Hemanth Gudaparthi, Zedong Peng",
+      "venue": "2024 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+      "year": 2024,
+      "pages": "170-175",
+      "tags": ["requirements engineering", "testability", "LLM"],
+      "doi": "10.1109/IRI62200.2024.00044",
+      "url": "http://doi.org/10.1109/IRI62200.2024.00044"
+    },
+    {
+      "id": 4,
+      "title": "What You See Is What You Test: Recommending Features from GUIs for Requirements-Based Testing",
+      "authors": "Zedong Peng, Juha Savolainen, Jianzhang Zhang, Nan Niu",
+      "venue": "2023 IEEE 24th International Conference on Information Reuse and Integration for Data Science (IRI)",
+      "year": 2023,
+      "pages": "289-294",
+      "tags": ["requirements-based testing", "GUI", "traceability"],
+      "doi": "10.1109/IRI58017.2023.00057",
+      "url": "http://doi.org/10.1109/IRI58017.2023.00057"
+    },
+    {
+      "id": 5,
+      "title": "Resource-Centric Goal Model Slicing for Detecting Feature Interactions",
+      "authors": "Zedong Peng, Mahima Dahiya, Tessneem Khalil, Nan Niu, Tanmay Bhowmik, Yilong Yang",
+      "venue": "2023 IEEE 24th International Conference on Information Reuse and Integration for Data Science (IRI)",
+      "year": 2023,
+      "pages": "58-63",
+      "tags": ["goal modeling", "feature interaction", "requirements engineering"],
+      "doi": "10.1109/IRI58017.2023.00018",
+      "url": "http://doi.org/10.1109/IRI58017.2023.00018"
+    },
+    {
+      "id": 6,
+      "title": "Learning I/O Variables from Scientific Software's User Manuals",
+      "authors": "Zedong Peng, Xuanyi Lin, Sreelekhaa Nagamalli Santhoshkumar, Nan Niu, Upulee Kanewala",
+      "venue": "Computational Science–ICCS 2022: 22nd International Conference",
+      "year": 2022,
+      "pages": "503-516",
+      "tags": ["scientific software", "NLP", "testing"],
+      "doi": "10.1007/978-3-031-08760-8_42",
+      "url": "http://doi.org/10.1007/978-3-031-08760-8_42"
+    },
+    {
+      "id": 7,
+      "title": "Contextual Understanding and Improvement of Metamorphic Testing in Scientific Software Development",
+      "authors": "Zedong Peng, Upulee Kanewala, Nan Niu",
+      "venue": "Proceedings of the 15th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)",
+      "year": 2021,
+      "pages": "1-6",
+      "award": "Best Emerging Results and Vision Paper Award",
+      "tags": ["metamorphic testing", "scientific software"],
+      "doi": "10.1145/3475716.3484188",
+      "url": "https://doi.org/10.1145/3475716.3484188"
+    },
+    {
+      "id": 8,
+      "title": "Environment-Driven Abstraction Identification for Requirements-Based Testing",
+      "authors": "Zedong Peng, Prachi Rathod, Nan Niu, Tanmay Bhowmik, Hui Liu, Lin Shi, Zhi Jin",
+      "venue": "2021 IEEE 29th International Requirements Engineering Conference (RE21)",
+      "year": 2021,
+      "pages": "245-256",
+      "award": "Best Research Paper Award",
+      "tags": ["requirements engineering", "abstraction", "traceability", "testing"],
+      "doi": "10.1109/RE51729.2021.00029",
+      "url": "http://doi.org/10.1109/RE51729.2021.00029"
+    },
+    {
+      "id": 9,
+      "title": "Co-AI: A Colab-Based Tool for Abstraction Identification",
+      "authors": "Zedong Peng, Nan Niu",
+      "venue": "2021 IEEE 29th International Requirements Engineering Conference (RE)",
+      "year": 2021,
+      "pages": "420-421",
+      "tags": ["tool", "requirements engineering", "AI"],
+      "doi": "10.1109/RE51729.2021.00050",
+      "url": "http://doi.org/10.1109/RE51729.2021.00050"
+    },
+    {
+      "id": 10,
+      "title": "Towards Norm Classification: An Initial Analysis of HIPAA Breaches",
+      "authors": "Vedarsh Shah, Zedong Peng, Ganesh Malla, Nan Niu",
+      "venue": "2021 IEEE 29th International Requirements Engineering Conference Workshops (REW)",
+      "year": 2021,
+      "pages": "415-420",
+      "tags": ["norm", "compliance", "HIPAA"],
+      "doi": "10.1109/REW53955.2021.00074",
+      "url": "http://doi.org/10.1109/REW53955.2021.00074"
+    },
+    {
+      "id": 11,
+      "title": "I/O Associations in Scientific Software: A Study of SWMM",
+      "authors": "Zedong Peng, Xuanyi Lin, Nan Niu, Omar I. Abdul-Aziz",
+      "venue": "Computational Science–ICCS 2021: 21st International Conference",
+      "year": 2021,
+      "pages": "375-389",
+      "tags": ["scientific software", "SWMM"],
+      "doi": "10.1007/978-3-030-77980-1_29",
+      "url": "http://doi.org/10.1007/978-3-030-77980-1_29"
+    },
+    {
+      "id": 12,
+      "title": "Semantic Frames for Classifying Temporal Requirements: An Exploratory Study",
+      "authors": "Aurek Chattopadhyay, Nan Niu, Zedong Peng, Jianzhang Zhang",
+      "venue": "4th Workshop on Natural Language Processing for Requirements Engineering (NLP4RE'21)",
+      "year": 2021,
+      "tags": ["NLP", "requirements engineering", "temporal"],
+      "url": "https://ceur-ws.org/Vol-2857/nlp4re6.pdf"
+    },
+    {
+      "id": 13,
+      "title": "Finding Metamorphic Relations for Scientific Software",
+      "authors": "Xuanyi Lin, Zedong Peng, Nan Niu, Wentao Wang, Hui Liu",
+      "venue": "43rd International Conference on Software Engineering (ICSE 2021)",
+      "year": 2021,
+      "tags": ["metamorphic testing", "scientific software"],
+      "doi": "10.1109/ICSE-Companion52605.2021.00118",
+      "url": "http://doi.org/10.1109/ICSE-Companion52605.2021.00118"
+    },
+    {
+      "id": 14,
+      "title": "Unit Tests of Scientific Software: A Study on SWMM",
+      "authors": "Zedong Peng, Xuanyi Lin, Nan Niu",
+      "venue": "International Workshop on Software Engineering for Science (SE4Science 2020)",
+      "year": 2020,
+      "pages": "413-427",
+      "tags": ["unit testing", "scientific software", "SWMM"],
+      "doi": "10.1007/978-3-030-50436-6_30",
+      "url": "https://doi.org/10.1007/978-3-030-50436-6_30"
+    },
+    {
+      "id": 15,
+      "title": "Correct Software by Design for Software-Defined Networking: A Preliminary Study",
+      "authors": "Liang Hao, Xin Sun, Lan Lin, Zedong Peng",
+      "venue": "International Conference on Software Engineering and Knowledge Engineering (SEKE)",
+      "year": 2020,
+      "pages": "127-134",
+      "tags": ["software design", "SDN"],
+      "url": "http://ksiresearch.org/seke/seke20paper/paper081.pdf"
+    }
+  ],
+  "journals": [
+    {
+      "id": 101,
+      "title": "Testing Software's Changing Features with Environment-Driven Abstraction Identification",
+      "authors": "Zedong Peng, Prachi Rathod, Nan Niu, Tanmay Bhowmik, Hui Liu, Lin Shi, Zhi Jin",
+      "venue": "Requirements Engineering",
+      "year": 2022,
+      "volume": "27",
+      "issue": "4",
+      "pages": "405-427",
+      "tags": ["requirements engineering", "abstraction", "testing"],
+      "doi": "10.1007/s00766-022-00390-8",
+      "url": "https://doi.org/10.1007/s00766-022-00390-8"
+    },
+    {
+      "id": 102,
+      "title": "Unit and Regression Tests of Scientific Software: A Study on SWMM",
+      "authors": "Zedong Peng, Xuanyi Lin, Michelle Simon, Nan Niu",
+      "venue": "Journal of Computational Science",
+      "year": 2021,
+      "volume": "53",
+      "pages": "101347",
+      "tags": ["testing", "scientific software", "SWMM"],
+      "doi": "10.1016/j.jocs.2021.101347",
+      "url": "https://doi.org/10.1016/j.jocs.2021.101347"
+    },
+    {
+      "id": 103,
+      "title": "Discovering Metamorphic Relations for Scientific Software from User Forums",
+      "authors": "Xuanyi Lin, Michelle Simon, Zedong Peng, Nan Niu",
+      "venue": "Computing in Science and Engineering",
+      "year": 2021,
+      "volume": "23",
+      "issue": "2",
+      "tags": ["metamorphic testing", "scientific software"],
+      "doi": "10.1109/MCSE.2020.3046973",
+      "url": "https://doi.org/10.1109/MCSE.2020.3046973"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "courses": [
+    {
+      "code": "CSCI 150",
+      "title": "Introduction to Computer Science",
+      "semesters": [
+        "Fall 2023",
+        "Spring 2024",
+        "Fall 2024",
+        "Spring 2025",
+        "Fall 2025"
+      ],
+      "description": "Foundational course introducing core concepts of computer science, computational thinking, and programming fundamentals.",
+      "level": "undergraduate"
+    },
+    {
+      "code": "CSCI 491/591",
+      "title": "Advanced Software Engineering",
+      "semesters": [
+        "Spring 2024",
+        "Spring 2025"
+      ],
+      "description": "Advanced topics in software engineering including requirements engineering, software architecture, testing strategies, and agile methodologies.",
+      "level": "graduate"
+    },
+    {
+      "code": "CSCI 323",
+      "title": "Software Science",
+      "semesters": [
+        "Fall 2024"
+      ],
+      "description": "Exploration of software engineering principles, software development lifecycle, version control, and collaborative development practices.",
+      "level": "undergraduate"
+    }
+  ]
+}

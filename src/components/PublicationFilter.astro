@@ -1,0 +1,39 @@
+<div class="mb-8 card p-6">
+  <label for="tag-filter" class="block text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">
+    Filter by Research Area:
+  </label>
+  <select 
+    id="tag-filter" 
+    class="w-full md:w-96 px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-montana-500 focus:border-transparent"
+  >
+    <option value="">All Publications</option>
+    <option value="requirements engineering">Requirements Engineering</option>
+    <option value="traceability">Traceability</option>
+    <option value="metamorphic testing">Metamorphic Testing</option>
+    <option value="testing">Testing</option>
+    <option value="vulnerability">Vulnerability Detection</option>
+    <option value="scientific software">Scientific Software</option>
+    <option value="AI">AI/LLM</option>
+    <option value="tool">Tools</option>
+  </select>
+</div>
+
+<script>
+  const tagFilter = document.getElementById('tag-filter') as HTMLSelectElement;
+  
+  tagFilter?.addEventListener('change', () => {
+    const selectedTag = tagFilter.value.toLowerCase();
+    const publications = document.querySelectorAll('.publication-item');
+    
+    publications.forEach(pub => {
+      const pubElement = pub as HTMLElement;
+      const tags = JSON.parse(pubElement.dataset.tags || '[]');
+      
+      if (!selectedTag || tags.some((tag: string) => tag.toLowerCase().includes(selectedTag))) {
+        pubElement.style.display = 'block';
+      } else {
+        pubElement.style.display = 'none';
+      }
+    });
+  });
+</script>

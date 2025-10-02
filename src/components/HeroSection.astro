@@ -1,0 +1,53 @@
+---
+import profileData from '../data/profile.json';
+---
+
+<section class="bg-gradient-to-br from-montana-50 to-forest-50 dark:from-gray-900 dark:to-gray-800 py-20">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <!-- Profile Image -->
+      <div class="flex-shrink-0">
+        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-montana-400 dark:border-montana-600 shadow-2xl">
+          <img 
+            src="/profile.jpg" 
+            alt="Dr. Zedong Peng"
+            class="w-full h-full object-cover"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%230284c7%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22sans-serif%22 font-size=%2280%22 fill=%22white%22%3EZP%3C/text%3E%3C/svg%3E'"
+          />
+        </div>
+      </div>
+
+      <!-- Profile Info -->
+      <div class="flex-1 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+          {profileData.name}
+          <span class="text-2xl md:text-3xl text-gray-600 dark:text-gray-400 ml-3">
+            {profileData.chineseName}
+          </span>
+        </h1>
+        <p class="text-xl md:text-2xl text-montana-700 dark:text-montana-400 font-semibold mb-4">
+          {profileData.title}
+        </p>
+        <p class="text-lg text-gray-700 dark:text-gray-300 mb-2">
+          {profileData.department}
+        </p>
+        <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">
+          {profileData.institution} · {profileData.location}
+        </p>
+        
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8 max-w-3xl">
+          {profileData.bio}
+        </p>
+
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+          <a href="/publications" class="btn-primary">
+            View Publications
+          </a>
+          <a href="/contact" class="btn-secondary">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
