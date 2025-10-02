@@ -1,7 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import TimelineItem from '../components/TimelineItem.astro';
-import timelineData from '../data/timeline.json';
 ---
 
 <Layout title="Research - Dr. Zedong Peng">
@@ -26,14 +24,14 @@ import timelineData from '../data/timeline.json';
       <div class="card p-6">
         <h3 class="text-xl font-bold text-montana-600 dark:text-montana-400 mb-3">Requirements Engineering & Traceability</h3>
         <p class="text-gray-700 dark:text-gray-300">
-          Developing automated approaches for requirements abstraction identification, environment-driven testing, and maintaining traceability links between requirements and implementation artifacts. This work has received recognition including the Best Research Paper Award at RE 2021.
+          Developing automated approaches for requirements abstraction identification, environment-driven testing, and maintaining traceability links between requirements and implementation artifacts. This work has received recognition including the Best Research Paper Award at the 29th IEEE International Requirements Engineering Conference (RE 2021).
         </p>
       </div>
 
       <div class="card p-6">
         <h3 class="text-xl font-bold text-montana-600 dark:text-montana-400 mb-3">Metamorphic Testing</h3>
         <p class="text-gray-700 dark:text-gray-300">
-          Exploring metamorphic testing techniques for scientific software systems where traditional test oracles are challenging to establish. My work focuses on discovering and applying metamorphic relations to improve test adequacy in computational science applications.
+          Exploring metamorphic testing techniques for scientific software systems where traditional test oracles are challenging to establish. My work focuses on discovering and applying metamorphic relations to improve test adequacy in computational science applications. This work has received the Best Emerging Results and Vision Paper Award at the 15th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM 2021).
         </p>
       </div>
 
@@ -50,14 +48,6 @@ import timelineData from '../data/timeline.json';
           Investigating the application of large language models (LLMs) and retrieval-augmented generation (RAG) to software engineering tasks, including requirements testability prediction, code generation, and automated documentation analysis.
         </p>
       </div>
-    </div>
-
-    <!-- Timeline -->
-    <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-8">Academic Timeline</h2>
-    <div class="max-w-3xl">
-      {timelineData.events.map(event => (
-        <TimelineItem event={event} />
-      ))}
     </div>
   </section>
 </Layout>
