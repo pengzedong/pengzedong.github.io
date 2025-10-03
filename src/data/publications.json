@@ -6,9 +6,10 @@
       "authors": "Victor Wen, Zedong Peng, Yusi Chen",
       "venue": "2025 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
       "year": 2025,
-      "status": "accepted",
+      "pages": "79-84",
       "tags": ["AI", "LLM", "cognition"],
-      "url": ""
+      "doi": "10.1109/IRI66576.2025.00022",
+      "url": "http://doi.org/10.1109/IRI66576.2025.00022"
     },
     {
       "id": 2,
