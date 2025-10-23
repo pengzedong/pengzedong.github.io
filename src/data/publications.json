@@ -6,10 +6,9 @@
       "authors": "Victor Wen, Zedong Peng, Yusi Chen",
       "venue": "2025 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
       "year": 2025,
-      "pages": "79-84",
+      "status": "accepted",
       "tags": ["AI", "LLM", "cognition"],
-      "doi": "10.1109/IRI66576.2025.00022",
-      "url": "http://doi.org/10.1109/IRI66576.2025.00022",
+      "url": "",
       "pdf": "/papers/2025-The_AI_Imitation_Game.pdf"
     },
     {
@@ -21,7 +20,8 @@
       "pages": "156-157",
       "tags": ["vulnerability", "security", "open-source"],
       "doi": "10.1109/IRI62200.2024.00041",
-      "url": "http://doi.org/10.1109/IRI62200.2024.00041"
+      "url": "http://doi.org/10.1109/IRI62200.2024.00041",
+      "pdf": "/papers/Advanced_Vulnerability_Scanning_for_Open_Source_Software_to_Minimize_False_Positives.pdf"
     },
     {
       "id": 3,
@@ -32,7 +32,8 @@
       "pages": "170-175",
       "tags": ["requirements engineering", "testability", "LLM"],
       "doi": "10.1109/IRI62200.2024.00044",
-      "url": "http://doi.org/10.1109/IRI62200.2024.00044"
+      "url": "http://doi.org/10.1109/IRI62200.2024.00044",
+      "pdf": "/papers/Leveraging_ChatGPT_to_Predict_Requirements_Testability_with_Differential_In-Context_Learning.pdf"
     },
     {
       "id": 4,
@@ -43,7 +44,8 @@
       "pages": "289-294",
       "tags": ["requirements-based testing", "GUI", "traceability"],
       "doi": "10.1109/IRI58017.2023.00057",
-      "url": "http://doi.org/10.1109/IRI58017.2023.00057"
+      "url": "http://doi.org/10.1109/IRI58017.2023.00057",
+      "pdf": "/papers/What_You_See_Is_What_You_Test_Recommending_Features_from_GUIs_for_Requirements-Based_Testing.pdf"
     },
     {
       "id": 5,
@@ -54,7 +56,8 @@
       "pages": "58-63",
       "tags": ["goal modeling", "feature interaction", "requirements engineering"],
       "doi": "10.1109/IRI58017.2023.00018",
-      "url": "http://doi.org/10.1109/IRI58017.2023.00018"
+      "url": "http://doi.org/10.1109/IRI58017.2023.00018",
+      "pdf": "/papers/Resource-Centric_Goal_Model_Slicing_for_Detecting_Feature_Interactions.pdf"
     },
     {
       "id": 6,
@@ -65,7 +68,8 @@
       "pages": "503-516",
       "tags": ["scientific software", "NLP", "testing"],
       "doi": "10.1007/978-3-031-08760-8_42",
-      "url": "http://doi.org/10.1007/978-3-031-08760-8_42"
+      "url": "http://doi.org/10.1007/978-3-031-08760-8_42",
+      "pdf": "/papers/Learning_i&o_variables_from_scientific_software's_user_manuals.pdf"
     },
     {
       "id": 7,
@@ -77,7 +81,8 @@
       "award": "Best Emerging Results and Vision Paper Award",
       "tags": ["metamorphic testing", "scientific software"],
       "doi": "10.1145/3475716.3484188",
-      "url": "https://doi.org/10.1145/3475716.3484188"
+      "url": "https://doi.org/10.1145/3475716.3484188",
+      "pdf": "/papers/Contextual_understanding_and_improvement_of_metamorphic_testing_in_scientific_software_development.pdf"
     },
     {
       "id": 8,
@@ -89,7 +94,8 @@
       "award": "Best Research Paper Award",
       "tags": ["requirements engineering", "abstraction", "traceability", "testing"],
       "doi": "10.1109/RE51729.2021.00029",
-      "url": "http://doi.org/10.1109/RE51729.2021.00029"
+      "url": "http://doi.org/10.1109/RE51729.2021.00029",
+      "pdf": "/papers/Environment-driven_abstraction_identification_for_requirements-based_testing.pdf"
     },
     {
       "id": 9,
@@ -100,7 +106,8 @@
       "pages": "420-421",
       "tags": ["tool", "requirements engineering", "AI"],
       "doi": "10.1109/RE51729.2021.00050",
-      "url": "http://doi.org/10.1109/RE51729.2021.00050"
+      "url": "http://doi.org/10.1109/RE51729.2021.00050",
+      "pdf": "/papers/Co-A_a_Colab-based_tool_for_abstraction_identification.pdf"
     },
     {
       "id": 10,
@@ -111,7 +118,8 @@
       "pages": "415-420",
       "tags": ["norm", "compliance", "HIPAA"],
       "doi": "10.1109/REW53955.2021.00074",
-      "url": "http://doi.org/10.1109/REW53955.2021.00074"
+      "url": "http://doi.org/10.1109/REW53955.2021.00074",
+      "pdf": "/papers/Towards_Norm_Classification_An_Initial_Analysis_of_HIPAA_Breaches.pdf"
     },
     {
       "id": 11,
@@ -122,7 +130,8 @@
       "pages": "375-389",
       "tags": ["scientific software", "SWMM"],
       "doi": "10.1007/978-3-030-77980-1_29",
-      "url": "http://doi.org/10.1007/978-3-030-77980-1_29"
+      "url": "http://doi.org/10.1007/978-3-030-77980-1_29",
+      "pdf": "/papers/I_and_O_associations_in_scientific_software_A_study_of_SWMM.pdf"
     },
     {
       "id": 12,
@@ -131,7 +140,8 @@
       "venue": "4th Workshop on Natural Language Processing for Requirements Engineering (NLP4RE'21)",
       "year": 2021,
       "tags": ["NLP", "requirements engineering", "temporal"],
-      "url": "https://ceur-ws.org/Vol-2857/nlp4re6.pdf"
+      "url": "https://ceur-ws.org/Vol-2857/nlp4re6.pdf",
+      "pdf": "/papers/Semantic_Frames_for_Classifying_Temporal_Requirements_An_Exploratory_Study.pdf"
     },
     {
       "id": 13,
@@ -141,7 +151,8 @@
       "year": 2021,
       "tags": ["metamorphic testing", "scientific software"],
       "doi": "10.1109/ICSE-Companion52605.2021.00118",
-      "url": "http://doi.org/10.1109/ICSE-Companion52605.2021.00118"
+      "url": "http://doi.org/10.1109/ICSE-Companion52605.2021.00118",
+      "pdf": "/papers/Finding_metamorphic_relations_for_scientifc_software.pdf"
     },
     {
       "id": 14,
@@ -152,7 +163,8 @@
       "pages": "413-427",
       "tags": ["unit testing", "scientific software", "SWMM"],
       "doi": "10.1007/978-3-030-50436-6_30",
-      "url": "https://doi.org/10.1007/978-3-030-50436-6_30"
+      "url": "https://doi.org/10.1007/978-3-030-50436-6_30",
+      "pdf": "/papers/Unit_Tests_of_Scientific_Software_A_Study_on_SWMM.pdf"
     },
     {
       "id": 15,
@@ -162,7 +174,8 @@
       "year": 2020,
       "pages": "127-134",
       "tags": ["software design", "SDN"],
-      "url": "http://ksiresearch.org/seke/seke20paper/paper081.pdf"
+      "url": "http://ksiresearch.org/seke/seke20paper/paper081.pdf",
+      "pdf": "/papers/Correct_Software_by_Design_for_Software-Defined_Networking__A_preliminary_Study_.pdf"
     }
   ],
   "journals": [
@@ -177,7 +190,8 @@
       "pages": "405-427",
       "tags": ["requirements engineering", "abstraction", "testing"],
       "doi": "10.1007/s00766-022-00390-8",
-      "url": "https://doi.org/10.1007/s00766-022-00390-8"
+      "url": "https://doi.org/10.1007/s00766-022-00390-8",
+      "pdf": "/papers/Testing_software's_changing_features_with_environment-driven_abstraction_identification.pdf"
     },
     {
       "id": 102,
@@ -189,7 +203,8 @@
       "pages": "101347",
       "tags": ["testing", "scientific software", "SWMM"],
       "doi": "10.1016/j.jocs.2021.101347",
-      "url": "https://doi.org/10.1016/j.jocs.2021.101347"
+      "url": "https://doi.org/10.1016/j.jocs.2021.101347",
+      "pdf": "/papers/Unit_and_Regression_Tests_of_Scientific_Software_A_Study_on_SWMM.pdf"
     },
     {
       "id": 103,
@@ -201,7 +216,8 @@
       "issue": "2",
       "tags": ["metamorphic testing", "scientific software"],
       "doi": "10.1109/MCSE.2020.3046973",
-      "url": "https://doi.org/10.1109/MCSE.2020.3046973"
+      "url": "https://doi.org/10.1109/MCSE.2020.3046973",
+      "pdf": "/papers/Discovering_Metamorphic_Relations_for_Scientific_Software_From_User_Forums.pdf"
     }
   ]
 }
