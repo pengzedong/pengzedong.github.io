@@ -1,16 +1,20 @@
 {
   "conferences": [
+
+
     {
-      "id": 1,
-      "title": "The AI Imitation Game: A Cognitive Comparison of Mimicry in Large Language Models",
-      "authors": "Victor Wen, Zedong Peng, Yusi Chen",
-      "venue": "2025 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
-      "year": 2025,
-      "status": "accepted",
-      "tags": ["AI", "LLM", "cognition"],
-      "url": "",
-      "pdf": "/papers/2025-The_AI_Imitation_Game.pdf"
-    },
+  "id": 1,
+  "title": "The AI Imitation Game: A Cognitive Comparison of Mimicry in Large Language Models",
+  "authors": "Victor Wen, Zedong Peng, Yusi Chen",
+  "venue": "2025 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)",
+  "year": 2025,
+  "pages": "79-84",
+  "tags": ["AI", "LLM", "cognition", "mimicry"],
+  "doi": "10.1109/IRI63572.2025.00023",
+  "url": "https://ieeexplore.ieee.org/abstract/document/11153104",
+  "pdf": "/papers/The_AI_Imitation_Game_A_Cognitive_Comparison_Mimicry_in_Large_Language_Models.pdf"
+},
+
     {
       "id": 2,
       "title": "Advanced Vulnerability Scanning for Open Source Software to Minimize False Positives",
