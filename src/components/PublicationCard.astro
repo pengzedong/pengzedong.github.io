@@ -5,6 +5,21 @@ interface Props {
 }
 
 const { publication, type } = Astro.props;
+
+// Assembled here rather than inline so that missing fields do not leave stray
+// spaces before the separating commas.
+const citationParts = [
+  publication.venue,
+  type === 'journal' && publication.volume ? `Vol. ${publication.volume}` : null,
+  type === 'journal' && publication.issue ? `No. ${publication.issue}` : null,
+  publication.pages ? `pp. ${publication.pages}` : null,
+  publication.year
+].filter(Boolean);
+
+const citation = citationParts.join(', ') + (publication.status ? ` (${publication.status})` : '');
+
+const isArxiv = publication.url?.includes('arxiv.org');
+const linkLabel = isArxiv ? 'View on arXiv' : 'Publisher Link';
 ---
 
 <div class="card p-6 mb-4 publication-item" data-tags={JSON.stringify(publication.tags || [])}>
@@ -22,14 +37,7 @@ const { publication, type } = Astro.props;
     {publication.authors}
   </p>
   
-  <p class="text-gray-600 dark:text-gray-400 italic mb-3">
-    {publication.venue}
-    {type === 'journal' && publication.volume && `, Vol. ${publication.volume}`}
-    {type === 'journal' && publication.issue && ` (${publication.issue})`}
-    {publication.pages && `, pp. ${publication.pages}`}
-    {publication.year && `, ${publication.year}`}
-    {publication.status && ` (${publication.status})`}
-  </p>
+  <p class="text-gray-600 dark:text-gray-400 italic mb-3">{citation}</p>
   
   <div class="flex flex-wrap gap-2 mb-4">
     {publication.tags?.map((tag: string) => (
@@ -64,7 +72,7 @@ const { publication, type } = Astro.props;
         <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
         </svg>
-        Publisher Link
+        {linkLabel}
       </a>
     )}
   </div>

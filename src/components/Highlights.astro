@@ -1,0 +1,113 @@
+---
+import highlightsData from '../data/highlights.json';
+
+const items = highlightsData.items;
+const featured = items.filter(item => item.featured);
+const rest = items.filter(item => !item.featured);
+
+// Only the most recent non-featured highlights stay visible; the rest sit behind
+// a toggle so the section never pushes the page down too far.
+const VISIBLE_REST = 4;
+---
+
+<section id="highlights" class="container mx-auto px-6 py-14">
+  <div class="flex flex-wrap items-end justify-between gap-4 mb-8">
+    <div>
+      <p class="text-sm font-semibold uppercase tracking-wider text-montana-600 dark:text-montana-400 mb-1">
+        Latest news
+      </p>
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100">Highlights</h2>
+    </div>
+    <a href="/publications" class="text-montana-600 dark:text-montana-400 font-medium hover:underline">
+      All publications &rarr;
+    </a>
+  </div>
+
+  <!-- Featured highlights -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+    {featured.map(item => (
+      <div class="card p-6 md:p-8 bg-gradient-to-br from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 border-2 border-yellow-300 dark:border-yellow-700">
+        <div class="flex items-start gap-4">
+          <div class="text-4xl leading-none" aria-hidden="true">{item.icon}</div>
+          <div class="flex-1 min-w-0">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wide text-yellow-800 dark:text-yellow-200 bg-yellow-100 dark:bg-yellow-900/60 rounded-full px-3 py-1 mb-3">
+              {item.date}
+            </span>
+            <h3 class="text-xl md:text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+              {item.title}
+            </h3>
+            {item.venue && (
+              <p class="text-gray-700 dark:text-gray-300 mb-2">{item.venue}</p>
+            )}
+            {item.description && (
+              <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{item.description}</p>
+            )}
+            {item.link && (
+              <a
+                href={item.link}
+                target={item.link.startsWith('http') ? '_blank' : null}
+                rel={item.link.startsWith('http') ? 'noopener noreferrer' : null}
+                class="inline-flex items-center mt-4 text-montana-700 dark:text-montana-300 font-medium hover:underline"
+              >
+                {item.linkText || 'Learn more'}
+                <span class="ml-1" aria-hidden="true">&rarr;</span>
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Remaining highlights -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    {rest.map((item, index) => (
+      <div
+        class:list={[
+          'card p-5 flex items-start gap-4',
+          index >= VISIBLE_REST && 'extra-highlight hidden'
+        ]}
+      >
+        <div class="text-2xl leading-none" aria-hidden="true">{item.icon}</div>
+        <div class="flex-1 min-w-0">
+          <div class="flex justify-between items-start gap-3 flex-wrap mb-1">
+            <h3 class="font-bold text-gray-900 dark:text-gray-100">{item.title}</h3>
+            <span class="text-sm text-gray-600 dark:text-gray-400 font-semibold whitespace-nowrap">{item.date}</span>
+          </div>
+          {item.venue && (
+            <p class="text-sm text-gray-700 dark:text-gray-300">{item.venue}</p>
+          )}
+          {item.description && (
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1">{item.description}</p>
+          )}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  {rest.length > VISIBLE_REST && (
+    <div class="text-center mt-8">
+      <button
+        id="toggle-highlights"
+        type="button"
+        aria-expanded="false"
+        class="btn-secondary"
+      >
+        Show all highlights
+      </button>
+    </div>
+  )}
+</section>
+
+<script>
+  const toggle = document.getElementById('toggle-highlights');
+
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.extra-highlight').forEach(el => {
+      el.classList.toggle('hidden', expanded);
+    });
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    toggle.textContent = expanded ? 'Show all highlights' : 'Show fewer highlights';
+  });
+</script>

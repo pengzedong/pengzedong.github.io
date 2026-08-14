@@ -2,12 +2,12 @@
 import profileData from '../data/profile.json';
 ---
 
-<section class="bg-gradient-to-br from-montana-50 to-forest-50 dark:from-gray-900 dark:to-gray-800 py-20">
+<section class="bg-gradient-to-br from-montana-50 to-forest-50 dark:from-gray-900 dark:to-gray-800 py-12 md:py-16">
   <div class="container mx-auto px-6">
-    <div class="flex flex-col md:flex-row items-center gap-12">
+    <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
       <!-- Profile Image -->
       <div class="flex-shrink-0">
-        <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-montana-400 dark:border-montana-600 shadow-2xl">
+        <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-montana-400 dark:border-montana-600 shadow-2xl">
           <img 
             src="/profile.jpg" 
             alt="Dr. Zedong Peng"
@@ -20,8 +20,8 @@ import profileData from '../data/profile.json';
       <!-- Profile Info -->
       <div class="flex-1 text-center md:text-left">
         <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-          {profileData.name}
-          <span class="text-2xl md:text-3xl text-gray-600 dark:text-gray-400 ml-3">
+          <span class="whitespace-nowrap">{profileData.name}</span>
+          <span class="block md:inline text-2xl md:text-3xl text-gray-600 dark:text-gray-400 md:ml-3 whitespace-nowrap">
             {profileData.chineseName}
           </span>
         </h1>
@@ -35,16 +35,27 @@ import profileData from '../data/profile.json';
           {profileData.institution} · {profileData.location}
         </p>
         
-        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8 max-w-3xl">
+        <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6 max-w-3xl">
           {profileData.bio}
         </p>
 
-        <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start items-center">
           <a href="/publications" class="btn-primary">
             View Publications
           </a>
           <a href="/contact" class="btn-secondary">
             Get in Touch
+          </a>
+          <a
+            href={profileData.links.googleScholar}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-montana-700 dark:text-montana-400 font-medium hover:underline"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 017.162 4.44L24 9.5z"/>
+            </svg>
+            Google Scholar
           </a>
         </div>
       </div>

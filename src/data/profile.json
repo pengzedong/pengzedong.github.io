@@ -6,19 +6,22 @@
   "department": "Department of Computer Science",
   "location": "Missoula, Montana, USA",
   "email": "zedong.peng[at]umt[dot]edu",
-  "bio": "Dr. Zedong Peng is an Assistant Professor of Computer Science at the University of Montana, specializing in software engineering, requirements engineering, and automated testing. His research bridges the gap between software requirements and quality assurance through novel AI-driven approaches.",
+  "bio": "Dr. Zedong Peng is an Assistant Professor of Computer Science at the University of Montana, specializing in software engineering, requirements engineering, and automated testing. His current work studies the security and reliability of LLM-generated code, and uses AI to bridge the gap between software requirements and quality assurance.",
   "researchInterests": [
     "Software Engineering",
+    "Security of LLM-Generated Code",
+    "AI for Software Engineering",
     "Requirements Engineering",
     "Requirements Traceability",
     "Automated Vulnerability Detection",
     "Metamorphic Testing",
     "RAG & NL-to-Test Bidirectional Chain",
-    "CI/CD & Software Quality",
     "Software Engineering Education"
   ],
   "links": {
     "googleScholar": "https://scholar.google.com/citations?user=DH_a-xQAAAAJ&hl=en",
-    "linkedin": "www.linkedin.com/in/zedong-peng-daydayhappy"
+    "github": "https://github.com/pengzedong",
+    "linkedin": "https://www.linkedin.com/in/zedong-peng-daydayhappy",
+    "arxiv": "https://arxiv.org/a/peng_z_1"
   }
 }

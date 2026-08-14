@@ -1,0 +1,83 @@
+{
+  "items": [
+    {
+      "icon": "🏅",
+      "kind": "award",
+      "featured": true,
+      "title": "Best Paper Runner-up Award",
+      "date": "August 2026",
+      "venue": "IEEE 27th International Conference on Information Reuse and Integration for Data Science (IRI 2026)",
+      "description": "For \"Cross-Cutting Security Analysis of LLM-Generated Code via Metamorphic Testing and Association Rule Mining\".",
+      "link": "https://arxiv.org/abs/2607.12089",
+      "linkText": "Read the paper"
+    },
+    {
+      "icon": "📄",
+      "kind": "publication",
+      "featured": true,
+      "title": "Two papers accepted at IEEE IRI 2026",
+      "date": "July 2026",
+      "venue": "Seattle, WA, USA",
+      "description": "\"Cross-Cutting Security Analysis of LLM-Generated Code\" and \"Evaluating and Improving Pedagogical Fit in LLM-Based AI Tutors with the Pedagogical Suitability Index\".",
+      "link": "/publications",
+      "linkText": "See publications"
+    },
+    {
+      "icon": "📄",
+      "kind": "publication",
+      "title": "Paper accepted at IEEE SANER 2026",
+      "date": "March 2026",
+      "venue": "Limassol, Cyprus",
+      "description": "\"Failure-Aware Enhancements for Large Language Model (LLM) Code Generation: An Empirical Study on Decision Framework\"."
+    },
+    {
+      "icon": "🏆",
+      "kind": "award",
+      "title": "Best Reviewer Award",
+      "date": "August 2025",
+      "venue": "IEEE 26th International Conference on Information Reuse and Integration for Data Science"
+    },
+    {
+      "icon": "⭐",
+      "kind": "award",
+      "title": "Outstanding Service Award",
+      "date": "August 2024",
+      "venue": "IEEE 25th International Conference on Information Reuse and Integration for Data Science"
+    },
+    {
+      "icon": "🎓",
+      "kind": "award",
+      "title": "Graduate Student Engineer of the Month Award",
+      "date": "2022-2023",
+      "venue": "Outstanding CEAS graduate student at University of Cincinnati"
+    },
+    {
+      "icon": "💰",
+      "kind": "fellowship",
+      "title": "Robert J. Herbold Fellowship",
+      "date": "2021-2022",
+      "venue": "College of Engineering and Applied Science, University of Cincinnati ($10,000)"
+    },
+    {
+      "icon": "🏅",
+      "kind": "award",
+      "title": "Best Emerging Results and Vision Paper Award",
+      "date": "October 2021",
+      "venue": "15th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM 2021)"
+    },
+    {
+      "icon": "🏅",
+      "kind": "award",
+      "title": "Best Research Paper Award",
+      "date": "September 2021",
+      "venue": "29th IEEE International Requirements Engineering Conference (RE 2021)"
+    },
+    {
+      "icon": "⭐",
+      "kind": "award",
+      "title": "Student Volunteer Outstanding Service Award",
+      "date": "August 2020",
+      "venue": "21st IEEE International Conference on Information Reuse and Integration for Data Science (IEEE IRI 2020)"
+    }
+  ]
+}

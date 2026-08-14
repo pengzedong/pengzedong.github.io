@@ -1,6 +1,7 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import profileData from '../data/profile.json';
 import '../styles/global.css';
 
 interface Props {
@@ -9,6 +10,24 @@ interface Props {
 }
 
 const { title, description = "Dr. Zedong Peng - Assistant Professor of Computer Science at University of Montana" } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const socialImage = new URL('/profile.jpg', Astro.site);
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: profileData.name,
+  jobTitle: profileData.title,
+  url: Astro.site?.href,
+  image: socialImage.href,
+  worksFor: {
+    '@type': 'CollegeOrUniversity',
+    name: profileData.institution
+  },
+  knowsAbout: profileData.researchInterests,
+  sameAs: Object.values(profileData.links)
+};
 ---
 
 <!DOCTYPE html>
@@ -20,12 +39,21 @@ const { title, description = "Dr. Zedong Peng - Assistant Professor of Computer 
   <meta name="generator" content={Astro.generator}>
   <title>{title}</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  
+  <link rel="canonical" href={canonicalUrl.href}>
+
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
-  
+  <meta property="og:url" content={canonicalUrl.href}>
+  <meta property="og:image" content={socialImage.href}>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={socialImage.href}>
+
+  <script type="application/ld+json" set:html={JSON.stringify(personSchema)} is:inline />
+
   <!-- Dark mode script (runs before page render) -->
   <script is:inline>
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {

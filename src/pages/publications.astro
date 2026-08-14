@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import PublicationCard from '../components/PublicationCard.astro';
 import PublicationFilter from '../components/PublicationFilter.astro';
 import publicationsData from '../data/publications.json';
+import profileData from '../data/profile.json';
 ---
 
 <Layout title="Publications - Dr. Zedong Peng">
@@ -10,8 +11,12 @@ import publicationsData from '../data/publications.json';
     <h1 class="section-title">Publications</h1>
     
     <div class="prose-custom max-w-4xl mb-12">
-      <p class="text-lg leading-relaxed">
-        My research has been published in premier software engineering conferences and journals, including IEEE RE, ICSE, ESEM, and Requirements Engineering journal. I have received multiple best paper awards and serve as a reviewer for top-tier venues in software engineering.
+      <p class="text-lg leading-relaxed mb-4">
+        My research has been published in premier software engineering conferences and journals, including IEEE RE, ICSE, SANER, ESEM, IEEE IRI, and the Requirements Engineering journal. I have received multiple best paper awards and serve as a reviewer for top-tier venues in software engineering.
+      </p>
+      <p>
+        For the most up-to-date list, see my
+        <a href={profileData.links.googleScholar} target="_blank" rel="noopener noreferrer" class="text-montana-600 dark:text-montana-400 hover:underline">Google Scholar profile</a>.
       </p>
     </div>
 
@@ -43,6 +48,37 @@ import publicationsData from '../data/publications.json';
       <div>
         {publicationsData.journals.map(pub => (
           <PublicationCard publication={pub} type="journal" />
+        ))}
+      </div>
+    </div>
+
+    <!-- Preprints -->
+    <div class="mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center">
+        <svg class="w-6 h-6 mr-2 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        Preprints & Under Review
+      </h2>
+      <div>
+        {publicationsData.preprints.map(pub => (
+          <PublicationCard publication={pub} type="conference" />
+        ))}
+      </div>
+    </div>
+
+    <!-- Dissertation -->
+    <div class="mt-16">
+      <h2 class="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6 flex items-center">
+        <svg class="w-6 h-6 mr-2 text-yellow-600 dark:text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.5a12.083 12.083 0 01-6.16-10.922L12 14z"></path>
+        </svg>
+        Dissertation
+      </h2>
+      <div>
+        {publicationsData.theses.map(pub => (
+          <PublicationCard publication={pub} type="conference" />
         ))}
       </div>
     </div>
