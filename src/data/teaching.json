@@ -30,7 +30,9 @@
       "code": "CSCI 323",
       "title": "Software Science",
       "semesters": [
-        "Fall 2024"
+        "Fall 2024",
+        "Fall 2025",
+        "Fall 2026"
       ],
       "description": "Exploration of software engineering principles, software development lifecycle, version control, and collaborative development practices.",
       "level": "undergraduate"
