@@ -8,7 +8,9 @@
         "Spring 2024",
         "Fall 2024",
         "Spring 2025",
-        "Fall 2025"
+        "Fall 2025",
+        "Spring 2026",
+        "Fall 2026"
       ],
       "description": "Foundational course introducing core concepts of computer science, computational thinking, and programming fundamentals.",
       "level": "undergraduate"
@@ -18,7 +20,8 @@
       "title": "Advanced Software Engineering",
       "semesters": [
         "Spring 2024",
-        "Spring 2025"
+        "Spring 2025",
+        "Spring 2026"
       ],
       "description": "Advanced topics in software engineering including requirements engineering, software architecture, testing strategies, and agile methodologies.",
       "level": "graduate"
