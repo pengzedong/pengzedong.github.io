@@ -1,39 +1,63 @@
+---
+// Each option maps to one or more tags used in publications.json; a publication
+// matches when any of its tags matches any keyword for the selected area.
+const filterOptions = [
+  { label: 'All Publications', keywords: [] },
+  { label: 'AI / LLM', keywords: ['AI', 'LLM'] },
+  { label: 'Security & Vulnerability Detection', keywords: ['security', 'vulnerability'] },
+  { label: 'Requirements Engineering', keywords: ['requirements engineering', 'requirements-based testing'] },
+  { label: 'Traceability', keywords: ['traceability'] },
+  { label: 'Metamorphic Testing', keywords: ['metamorphic testing'] },
+  { label: 'Testing', keywords: ['testing'] },
+  { label: 'Scientific Software', keywords: ['scientific software'] },
+  { label: 'Code Generation', keywords: ['code generation'] },
+  { label: 'Education', keywords: ['education', 'AI tutors'] },
+  { label: 'Tools', keywords: ['tool'] }
+];
+---
+
 <div class="mb-8 card p-6">
   <label for="tag-filter" class="block text-lg font-semibold text-gray-900 dark:text-gray-100 mb-3">
     Filter by Research Area:
   </label>
-  <select 
-    id="tag-filter" 
+  <select
+    id="tag-filter"
     class="w-full md:w-96 px-4 py-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-montana-500 focus:border-transparent"
   >
-    <option value="">All Publications</option>
-    <option value="requirements engineering">Requirements Engineering</option>
-    <option value="traceability">Traceability</option>
-    <option value="metamorphic testing">Metamorphic Testing</option>
-    <option value="testing">Testing</option>
-    <option value="vulnerability">Vulnerability Detection</option>
-    <option value="scientific software">Scientific Software</option>
-    <option value="AI">AI/LLM</option>
-    <option value="tool">Tools</option>
+    {filterOptions.map(option => (
+      <option value={option.keywords.join('|')}>{option.label}</option>
+    ))}
   </select>
+  <p id="filter-count" class="mt-3 text-sm text-gray-600 dark:text-gray-400" aria-live="polite"></p>
 </div>
 
 <script>
   const tagFilter = document.getElementById('tag-filter') as HTMLSelectElement;
-  
+  const filterCount = document.getElementById('filter-count');
+
   tagFilter?.addEventListener('change', () => {
-    const selectedTag = tagFilter.value.toLowerCase();
-    const publications = document.querySelectorAll('.publication-item');
-    
+    const keywords = tagFilter.value
+      .split('|')
+      .filter(Boolean)
+      .map(keyword => keyword.toLowerCase());
+    const publications = document.querySelectorAll<HTMLElement>('.publication-item');
+    let visible = 0;
+
     publications.forEach(pub => {
-      const pubElement = pub as HTMLElement;
-      const tags = JSON.parse(pubElement.dataset.tags || '[]');
-      
-      if (!selectedTag || tags.some((tag: string) => tag.toLowerCase().includes(selectedTag))) {
-        pubElement.style.display = 'block';
-      } else {
-        pubElement.style.display = 'none';
-      }
+      const tags: string[] = JSON.parse(pub.dataset.tags || '[]');
+      const matches =
+        keywords.length === 0 ||
+        tags.some(tag => keywords.some(keyword => tag.toLowerCase().includes(keyword)));
+
+      pub.style.display = matches ? 'block' : 'none';
+      if (matches) visible++;
     });
+
+    if (filterCount) {
+      filterCount.textContent =
+        keywords.length === 0
+          ? ''
+          : `Showing ${visible} of ${publications.length} publications.`;
+    }
   });
 </script>

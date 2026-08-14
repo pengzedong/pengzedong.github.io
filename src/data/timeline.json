@@ -1,6 +1,13 @@
 {
   "events": [
     {
+      "year": "2026",
+      "month": "August",
+      "title": "Best Paper Runner-up Award",
+      "description": "IEEE 27th International Conference on Information Reuse and Integration for Data Science (IRI 2026), for \"Cross-Cutting Security Analysis of LLM-Generated Code via Metamorphic Testing and Association Rule Mining\"",
+      "type": "award"
+    },
+    {
       "year": "2025",
       "month": "August",
       "title": "Best Reviewer Award",
