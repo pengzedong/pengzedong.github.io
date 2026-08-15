@@ -1,6 +1,5 @@
 ---
 import profileData from '../data/profile.json';
-import { mailtoHref } from '../utils/email';
 ---
 
 <footer class="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-20">
@@ -13,11 +12,7 @@ import { mailtoHref } from '../utils/email';
           <p>{profileData.department}</p>
           <p>{profileData.institution}</p>
           <p>{profileData.location}</p>
-          <p class="mt-3">
-            <a href={mailtoHref(profileData.email)} class="text-montana-600 dark:text-montana-400 hover:underline">
-              {profileData.email}
-            </a>
-          </p>
+          <p class="mt-3">{profileData.email}</p>
         </div>
       </div>
 
