@@ -1,0 +1,24 @@
+{
+  "open": true,
+  "badge": "Now recruiting",
+  "title": "Looking for a PhD student",
+  "intro": "I am recruiting a PhD student to join my group in the Department of Computer Science at the University of Montana. Beyond a strong technical background, here is what I hope you bring:",
+  "expectations": [
+    {
+      "icon": "🌿",
+      "title": "A life outside research",
+      "description": "You enjoy life and have hobbies of your own, and you know how to keep research and the rest of your life in balance."
+    },
+    {
+      "icon": "📚",
+      "title": "Patience and genuine curiosity",
+      "description": "You are patient and enthusiastic about research, and willing to sit down and read the literature in the field carefully and thoroughly."
+    },
+    {
+      "icon": "💬",
+      "title": "Open communication",
+      "description": "You communicate thoughtfully, including about how you are feeling. When you run into difficulty, you raise it early and ask for support rather than struggling alone."
+    }
+  ],
+  "closing": "If that sounds like you, I would be glad to hear from you. Please email me with your CV and a short note about what you would like to work on."
+}
