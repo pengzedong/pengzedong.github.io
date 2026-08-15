@@ -363,19 +363,5 @@
       ],
       "url": "https://arxiv.org/abs/2601.00235"
     }
-  ],
-  "theses": [
-    {
-      "id": 301,
-      "title": "Examining Metamorphic Testing with Requirements Knowledge in Practical Settings",
-      "authors": "Zedong Peng",
-      "venue": "Ph.D. Dissertation, University of Cincinnati",
-      "year": 2023,
-      "tags": [
-        "metamorphic testing",
-        "requirements engineering"
-      ],
-      "url": "https://scholar.google.com/citations?user=DH_a-xQAAAAJ&hl=en"
-    }
   ]
 }
