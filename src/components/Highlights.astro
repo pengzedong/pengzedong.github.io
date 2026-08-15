@@ -4,10 +4,6 @@ import highlightsData from '../data/highlights.json';
 const items = highlightsData.items;
 const featured = items.filter(item => item.featured);
 const rest = items.filter(item => !item.featured);
-
-// Only the most recent non-featured highlights stay visible; the rest sit behind
-// a toggle so the section never pushes the page down too far.
-const VISIBLE_REST = 4;
 ---
 
 <section id="highlights" class="container mx-auto px-6 py-14">
@@ -61,13 +57,8 @@ const VISIBLE_REST = 4;
 
   <!-- Remaining highlights -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    {rest.map((item, index) => (
-      <div
-        class:list={[
-          'card p-5 flex items-start gap-4',
-          index >= VISIBLE_REST && 'extra-highlight hidden'
-        ]}
-      >
+    {rest.map(item => (
+      <div class="card p-5 flex items-start gap-4">
         <div class="text-2xl leading-none" aria-hidden="true">{item.icon}</div>
         <div class="flex-1 min-w-0">
           <div class="flex justify-between items-start gap-3 flex-wrap mb-1">
@@ -84,30 +75,4 @@ const VISIBLE_REST = 4;
       </div>
     ))}
   </div>
-
-  {rest.length > VISIBLE_REST && (
-    <div class="text-center mt-8">
-      <button
-        id="toggle-highlights"
-        type="button"
-        aria-expanded="false"
-        class="btn-secondary"
-      >
-        Show all highlights
-      </button>
-    </div>
-  )}
 </section>
-
-<script>
-  const toggle = document.getElementById('toggle-highlights');
-
-  toggle?.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    document.querySelectorAll('.extra-highlight').forEach(el => {
-      el.classList.toggle('hidden', expanded);
-    });
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    toggle.textContent = expanded ? 'Show all highlights' : 'Show fewer highlights';
-  });
-</script>
