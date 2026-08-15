@@ -1,0 +1,50 @@
+---
+import recruitingData from '../data/recruiting.json';
+import profileData from '../data/profile.json';
+import { mailtoHref } from '../utils/email';
+
+interface Props {
+  // The homepage renders this inside its own full-width band; the contact page
+  // drops the card straight into the page flow.
+  wrapped?: boolean;
+}
+
+const { wrapped = false } = Astro.props;
+const { open, badge, title, intro, expectations, closing } = recruitingData;
+---
+
+{open && (
+  <div class:list={[wrapped && 'container mx-auto px-6 py-14']}>
+    <div class="card p-6 md:p-8 bg-gradient-to-br from-forest-50 to-montana-50 dark:from-forest-900/20 dark:to-montana-900/20 border-2 border-forest-300 dark:border-forest-700">
+      <span class="inline-block text-xs font-semibold uppercase tracking-wide text-forest-800 dark:text-forest-200 bg-forest-100 dark:bg-forest-900/60 rounded-full px-3 py-1 mb-3">
+        {badge}
+      </span>
+
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-3">
+        {title}
+      </h2>
+
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6 max-w-3xl">
+        {intro}
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        {expectations.map(item => (
+          <div class="bg-white/70 dark:bg-gray-800/60 rounded-lg p-4 border border-gray-200 dark:border-gray-700">
+            <div class="text-2xl mb-2" aria-hidden="true">{item.icon}</div>
+            <h3 class="font-bold text-gray-900 dark:text-gray-100 mb-1">{item.title}</h3>
+            <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{item.description}</p>
+          </div>
+        ))}
+      </div>
+
+      <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-5 max-w-3xl">
+        {closing}
+      </p>
+
+      <a href={mailtoHref(profileData.email, 'PhD Position Inquiry')} class="btn-primary inline-block">
+        Email me
+      </a>
+    </div>
+  </div>
+)}
