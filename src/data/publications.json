@@ -15,7 +15,8 @@
         "code generation"
       ],
       "doi": "10.1109/IRI69576.2026.00034",
-      "url": "https://ieeexplore.ieee.org/document/11676666/"
+      "url": "https://ieeexplore.ieee.org/document/11676666/",
+      "pdf": "/papers/Cross-Cutting_Security_Analysis_of_LLM-Generated_Code_via_Metamorphic_Testing_and_Association_Rule_Mining.pdf"
     },
     {
       "id": 21,
@@ -31,7 +32,8 @@
         "evaluation"
       ],
       "doi": "10.1109/IRI69576.2026.00027",
-      "url": "https://ieeexplore.ieee.org/document/11676760/"
+      "url": "https://ieeexplore.ieee.org/document/11676760/",
+      "pdf": "/papers/Evaluating_and_Improving_Pedagogical_Fit_in_LLM-Based_AI_Tutors_with_the_Pedagogical_Suitability_Index.pdf"
     },
     {
       "id": 22,
@@ -46,7 +48,8 @@
         "empirical study"
       ],
       "doi": "10.1109/SANER67736.2026.00085",
-      "url": "http://doi.org/10.1109/SANER67736.2026.00085"
+      "url": "http://doi.org/10.1109/SANER67736.2026.00085",
+      "pdf": "/papers/Failure-Aware_Enhancements_for_Large_Language_Model_LLM_Code_Generation_An_Empirical_Study_on_Decision_Framework.pdf"
     },
     {
       "id": 1,
