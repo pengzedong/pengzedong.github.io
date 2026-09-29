@@ -6,6 +6,7 @@
       "authors": "Zedong Peng, Chenggang Wang, Shangyue Zhu",
       "venue": "2026 IEEE 27th International Conference on Information Reuse and Integration for Data Science (IRI)",
       "year": 2026,
+      "pages": "129-134",
       "award": "Best Paper Runner-up Award",
       "tags": [
         "LLM",
@@ -13,7 +14,8 @@
         "metamorphic testing",
         "code generation"
       ],
-      "url": "https://arxiv.org/abs/2607.12089"
+      "doi": "10.1109/IRI69576.2026.00034",
+      "url": "https://ieeexplore.ieee.org/document/11676666/"
     },
     {
       "id": 21,
@@ -21,13 +23,15 @@
       "authors": "Benjamin Barlog, Hudson Craig, Zedong Peng",
       "venue": "2026 IEEE 27th International Conference on Information Reuse and Integration for Data Science (IRI)",
       "year": 2026,
+      "pages": "86-91",
       "tags": [
         "LLM",
         "AI tutors",
         "education",
         "evaluation"
       ],
-      "url": "https://arxiv.org/abs/2608.05411"
+      "doi": "10.1109/IRI69576.2026.00027",
+      "url": "https://ieeexplore.ieee.org/document/11676760/"
     },
     {
       "id": 22,
