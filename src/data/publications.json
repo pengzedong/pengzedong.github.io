@@ -290,6 +290,25 @@
   ],
   "journals": [
     {
+      "id": 104,
+      "title": "Understanding Creativity Across Brains and Machines Through the GEEC Framework",
+      "authors": "Lucy L. W. Owen, Zedong Peng, Erik Guzik",
+      "venue": "Knowledge",
+      "year": 2026,
+      "volume": "6",
+      "issue": "4",
+      "article": "25",
+      "tags": [
+        "creativity",
+        "AGI",
+        "cognitive neuroscience",
+        "generative AI"
+      ],
+      "doi": "10.3390/knowledge6040025",
+      "url": "https://doi.org/10.3390/knowledge6040025",
+      "pdf": "/papers/Understanding_Creativity_Across_Brains_and_Machines_Through_the_GEEC_Framework.pdf"
+    },
+    {
       "id": 101,
       "title": "Testing Software's Changing Features with Environment-Driven Abstraction Identification",
       "authors": "Zedong Peng, Prachi Rathod, Nan Niu, Tanmay Bhowmik, Hui Liu, Lin Shi, Zhi Jin",
