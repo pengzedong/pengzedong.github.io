@@ -12,6 +12,8 @@ const citationParts = [
   publication.venue,
   type === 'journal' && publication.volume ? `Vol. ${publication.volume}` : null,
   type === 'journal' && publication.issue ? `No. ${publication.issue}` : null,
+  // Journals such as MDPI's number articles instead of paginating them.
+  publication.article ? `Article ${publication.article}` : null,
   publication.pages ? `pp. ${publication.pages}` : null,
   publication.year
 ].filter(Boolean);
