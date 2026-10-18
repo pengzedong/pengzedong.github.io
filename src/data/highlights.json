@@ -1,14 +1,6 @@
 {
   "items": [
     {
-      "icon": "📄",
-      "kind": "publication",
-      "title": "Paper published in Knowledge (MDPI)",
-      "date": "September 2026",
-      "venue": "Knowledge, Vol. 6, No. 4",
-      "description": "\"Understanding Creativity Across Brains and Machines Through the GEEC Framework\"."
-    },
-    {
       "icon": "🏅",
       "kind": "award",
       "featured": true,
@@ -23,12 +15,20 @@
       "icon": "📄",
       "kind": "publication",
       "featured": true,
+      "title": "Paper published in Knowledge (MDPI)",
+      "date": "September 2026",
+      "venue": "Knowledge, Vol. 6, No. 4, Article 25",
+      "description": "\"Understanding Creativity Across Brains and Machines Through the GEEC Framework\".",
+      "link": "https://doi.org/10.3390/knowledge6040025",
+      "linkText": "Read the paper"
+    },
+    {
+      "icon": "📄",
+      "kind": "publication",
       "title": "Two papers accepted at IEEE IRI 2026",
       "date": "July 2026",
       "venue": "Seattle, WA, USA",
-      "description": "\"Cross-Cutting Security Analysis of LLM-Generated Code\" and \"Evaluating and Improving Pedagogical Fit in LLM-Based AI Tutors with the Pedagogical Suitability Index\".",
-      "link": "/publications",
-      "linkText": "See publications"
+      "description": "\"Cross-Cutting Security Analysis of LLM-Generated Code\" and \"Evaluating and Improving Pedagogical Fit in LLM-Based AI Tutors with the Pedagogical Suitability Index\"."
     },
     {
       "icon": "📄",
