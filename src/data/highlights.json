@@ -1,6 +1,14 @@
 {
   "items": [
     {
+      "icon": "📄",
+      "kind": "publication",
+      "title": "Paper published in Knowledge (MDPI)",
+      "date": "September 2026",
+      "venue": "Knowledge, Vol. 6, No. 4",
+      "description": "\"Understanding Creativity Across Brains and Machines Through the GEEC Framework\"."
+    },
+    {
       "icon": "🏅",
       "kind": "award",
       "featured": true,
